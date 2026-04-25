@@ -190,7 +190,7 @@ export default function App() {
                     </View>
                 }
             />
-      // IA: Solicitei ao Claude para criar um layout mais agradável com o retorno da API
+            {/* IA: Solicitei ao Claude para criar um layout mais agradável com o retorno da API */}
             <Modal visible={sel !== null} transparent animationType="fade" onRequestClose={() => setSelectedChar(null)}>
                 {sel && (
                     <View style={s.overlay}>
