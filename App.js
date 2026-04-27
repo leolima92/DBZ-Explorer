@@ -5,7 +5,6 @@ import {
     Text, TextInput, TouchableOpacity, View,
 } from 'react-native';
 
-// ===== CORES E TRADUÇÕES =====
 //IA: Solicitei ao Claude uma paleta de cores para cada raça do anime
 
 const CORES = {
