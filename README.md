@@ -1,50 +1,38 @@
-# Welcome to your Expo app 👋
+# 🐉 DBZ Explorer
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Enciclopédia de personagens de Dragon Ball, construída em React Native com Expo para o exercicício da aula de Mobile 22/04/2026. 
+O app consome a [Dragon Ball API](https://dragonball-api.com/) e exibe todos os personagens com suas informações.
 
-## Get started
+## 🔗 API utilizada
 
-1. Install dependencies
+- **Dragon Ball API** — https://dragonball-api.com/api/characters
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Como rodar o projeto
 
 ```bash
-npm run reset-project
+# Clone o repositório
+git clone https://github.com/seu-usuario/dbz-explorer.git
+cd dbz-explorer
+
+# Instale as dependências
+npm install
+
+# Instale o suporte pra web
+npx expo install react-dom react-native-web @expo/metro-runtime
+
+# Rode o projeto na web
+npx expo start --web
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📱 Funcionalidades
 
-## Learn more
+- Listagem de todos os personagens da API com imagem, nome, raça e nível de ki
+- Busca por nome em tempo real
+- Filtro por raça (Saiyajin, Namekuseijin, Humano, Android, etc.)
+- Modal de detalhes ao clicar em um personagem, com descrição completa, stats e transformações
+- Tela de loading com spinner enquanto os dados carregam
+- Tratamento de erro com botão para tentar novamente
 
-To learn more about developing your project with Expo, look at the following resources:
+## Componentes utilizados
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+ View, Text e Button, FlatList, TextInput, Image, TouchableOpacity, ActivityIndicator, Modal, SafeAreaView, ScrollView e StatusBar.
